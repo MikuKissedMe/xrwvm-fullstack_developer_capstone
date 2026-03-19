@@ -15,36 +15,31 @@ Installation & Running Locally
 1. Clone the repository
 
 2. Start the Node/MongoDB Microservice:
-
+```
 cd server/database
-
 docker build . -t nodeapp
-
 docker-compose up -d
+```
 
 3. Install Django Dependencies:
-
+```
 cd ../
-
 pip install -r requirements.txt
-
+```
 4. Run Database Migrations:
-
+```
 python manage.py makemigrations
-
 python manage.py migrate
-
+```
 5. Start the Django Development Server:
-
+```
 python manage.py runserver
-
+```
 6. Build the React Frontend:
-
+```
 cd ../frontend
-
 npm install
-
 npm run build
-
+```
 7. View the Application:
 Open your browser and navigate to http://localhost:8000/
